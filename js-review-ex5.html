@@ -68,9 +68,9 @@
 $('.price').text("$0")
 
 
-//Exercise 2 - change 2nd price from $0 to $8
+//Exercise 2 - change first price from $0 to $2
 // $('.price:nth(0)').text("$44") first item is 0, second is 1 etc... 
-$('.price:first').text("$44") 
+$('.price:first').text("$2") 
 
 
 // Exercise 3 - jQuery that changes the 'Viewing All Products' font size to 5em
@@ -82,8 +82,10 @@ $('.container h2').css("font-size","5em")
 // $('.product h3').parent().css({"width":"200px","height":"200px"}) .. 
 $('.product h3').css("color","#F84102").parent().css({"width":"200px","height":"200px"})
 
+// Exercise 5 - jQuery that adds "And it tastes GREAT" to the end of each paragraph
+$("p").after("<p>And it tastes GREAT!!</p>")
 
-
+// $("p").after("<span>And it tastes GREAT!!</span>").css("color","blue")
 
 
 
