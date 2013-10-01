@@ -67,12 +67,20 @@
 // $('.price').replaceWith("$0") <-- this removes all formatting 
 $('.price').text("$0")
 
+
 //Exercise 2 - change 2nd price from $0 to $8
 // $('.price:nth(0)').text("$44") first item is 0, second is 1 etc... 
 $('.price:first').text("$44") 
 
+
 // Exercise 3 - jQuery that changes the 'Viewing All Products' font size to 5em
 $('.container h2').css("font-size","5em")
+
+
+// Exercise 4 - jQuery that changes color of product titles to #F84102, then changes its parent container width and height to 200px.
+// $('.product h3').css("color","#F84102")
+// $('.product h3').parent().css({"width":"200px","height":"200px"}) .. 
+$('.product h3').css("color","#F84102").parent().css({"width":"200px","height":"200px"})
 
 
 
