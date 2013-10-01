@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title>JS Review Exercise #5</title>
+  <style type="text/css">
+  body {
+    background: #A5A5B5;
+    color: #1c1e22;
+  }
+  h1, h2, h3 { font-family: Futura, sans-serif; }
+  h1 {
+    font-size: 3em;
+  }
+  .container {
+    width: 804px;
+    margin: 0 auto;
+  }
+  .product {
+    background: #D6DEDE;
+    float: left;
+    margin: 10px;
+    padding: 1px 20px;
+    width: 208px;
+  }
+  .product h3 {
+    color: #281737;
+    font-size: 2em;
+  }
+  .product .price {
+    color: #688779;
+    font-size: 0.65em;
+  }
+  .product label {
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to Ebazon.com</h1>
+
+  <h2>Viewing All Products:</h2>
+  <div class="products">
+
+    <div class="product">
+      <h3>Alcohol <span class="price">$8</span></h3>
+      <p>Great for cleaning wounds and healing people.</p>
+    </div>
+
+    <div class="product">
+      <h3>Joint <span class="price">$35</span></h3>
+      <p>Useful for connecting two mechanical parts together.</p>
+    </div>
+
+    <div class="product">
+      <h3>Cocane <span class="price">$40/oz</span></h3>
+      <p>A tasty treat made with organic cane sugar.</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+//Exercise 1 - turn all prices to $0.
+// $('.price').replaceWith("$0") <-- this removes all formatting 
+$('.price').text("$0")
+
+//Exercise 2 - change 2nd price from $0 to $8
+// $('.price:nth(0)').text("$44") first item is 0, second is 1 etc... 
+$('.price:first').text("$44") 
+
+// Exercise 3 - jQuery that changes the 'Viewing All Products' font size to 5em
+$('.container h2').css("font-size","5em")
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
