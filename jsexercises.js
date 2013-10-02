@@ -13,7 +13,6 @@ console.log("Should be okok:", echoecho('ok'));
 
 //  __________________________________
 
-???????????????????????
 // Individual Exercise #2
 // Create a function strMult that takes two parameters str and times and returns that string multiplied by the given number of times.
 
@@ -28,7 +27,6 @@ var strMult = function(str, times){
 
 	}
 };
-
 
 console.log("Should be whatwhat:", strMult('what', 2));
 console.log("Should be kkkkk:", strMult('k', 5));
@@ -211,6 +209,36 @@ console.log('Random number should be 9:', generateNumber());
 
 
 // ---------------------------------------------------
+// Individual Exercise #8
+// Write a function (not a constructor) vend that:
+
+// Returns an object that:
+// Has a property amountLeft with the value 5
+// var drink = vend();
+// console.log('Drink should have 5 left:', drink.amountLeft);
+
+
+
+// Individual Exercise #8
+// Write a function (not a constructor) vend that:
+
+// Returns an object that:
+// Has a property amountLeft with the value 5
+
+var vend = function (){
+	var something = {
+		amountLeft: 5
+	};
+	return something
+};
+
+var drink = vend();
+console.log('Drink should have 5 left:', drink.amountLeft);
+
+
+
+// ------------------------------------------------
+
 
 
 
